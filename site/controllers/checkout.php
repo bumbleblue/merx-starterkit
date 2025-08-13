@@ -9,11 +9,10 @@
  */
 
 return function (\Kirby\Cms\Site $site) {
-    $orderBlueprint = Kirby\Cms\Blueprint::factory('pages/order', null, $site);
-    $orderBlueprintSection = $orderBlueprint->section('personalData');
+	$orderBlueprint = Kirby\Cms\Blueprint::factory('pages/order', null, $site);
+	$orderBlueprintSection = $orderBlueprint->section('personalData');
 
-    return [
-        'fields' => $orderBlueprintSection ? $orderBlueprintSection->toArray()['fields'] : [],
-        'message' => merx()->getMessage(),
-    ];
+	return [
+		'fields' => $orderBlueprintSection ? $orderBlueprintSection->toArray()['fields'] : [],
+	];
 };

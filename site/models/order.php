@@ -1,5 +1,7 @@
 <?php
 
+use Kirby\Content\Field;
+
 /**
  * It is required to create an Order Page Model
  * https://merx.wagnerwagner.de/docs/getting-started/set-up#order-page-model
@@ -9,11 +11,11 @@
 
 class OrderPage extends \Wagnerwagner\Merx\OrderPage
 {
-    /**
-     * @return \Kirby\Content\Field|null
-     */
-    public function title(): Field
-    {
-        return new Field($this, 'title', t('order.invoice') . ' ' . $this->invoiceNumber());
-    }
+	/**
+	 * @return \Kirby\Content\Field|null
+	 */
+	public function title(): Field
+	{
+		return new Field($this, 'title', t('order.invoice') . ' ' . $this->invoiceNumber());
+	}
 }

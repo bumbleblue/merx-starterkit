@@ -8,6 +8,6 @@ extends: ww.merx.sections/orders
 
 # The `page` variable is an order page. In our `order` blueprint we require name and city.
 # So we can safely output these fields next to the invoiceNumber.
-text: "#{{ page.invoiceNumber }} – {{ page.name }}, {{ page.city }}"
+# text: "#{{ page.invoiceNumber }} – {{ page.name }}, {{ page.city }}"
 
-info: "{{ page.total.toString }} | {{ page.invoiceDate.toIntlDate }}"
+# info: "{{ page.total.toString }} | {{ page.invoiceDate.toIntlDate }}"

@@ -4,16 +4,18 @@ Title: Sofa
 
 Prices:
 
--
+- 
   price: 2800
+  pricingkey: en
   currency: EUR
--
+- 
   price: 2950
+  pricingkey: de
   currency: USD
 
 ----
 
-Tax: default
+Taxrule: default
 
 ----
 
@@ -21,14 +23,15 @@ Stock: 2
 
 ----
 
-Blocks: [{"content":{"text":"<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>"},"id":"e8a8c63f-11c9-4f84-aff9-c42c5d43f679","isHidden":false,"type":"text"}]
+Blocks: [{"content":{"text":"<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"},"id":"e8a8c63f-11c9-4f84-aff9-c42c5d43f679","isHidden":false,"type":"text"}]
 
 ----
 
-Thumb:
+Thumb: - file://LPEe98pYBj5iMOXo
 
-- >
-  phillip-goldsberry-fzuleefea1q-unsplash.jpg
+----
+
+Tax: default
 
 ----
 

@@ -93,6 +93,7 @@
 .cart td:nth-last-child(1),
 .cart td:nth-last-child(2) {
   text-align: end;
+	white-space: nowrap;
 }
 .cart tfoot th,
 .cart tfoot td {

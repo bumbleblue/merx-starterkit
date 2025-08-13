@@ -157,11 +157,11 @@ class Checkout {
 
     try {
       // Some payment method need additional JavaScript
-      if (paymentMethod === 'credit-card-sca' || paymentMethod === 'sepa-debit') {
+      if (paymentMethod === 'credit-card' || paymentMethod === 'sepa-debit') {
         let error = null;
         // Optional: Add billing details like name, postal code or city to the stripe request.
 
-        if (paymentMethod === 'credit-card-sca') {
+        if (paymentMethod === 'credit-card') {
           const clientSecret = await this.getClientSecret('card');
           // https://stripe.com/docs/js/payment_intents/confirm_card_payment
           ({ error } = await stripe.confirmCardPayment(clientSecret, {

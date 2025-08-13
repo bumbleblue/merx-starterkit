@@ -4,20 +4,22 @@ Title: Coffee
 
 Prices:
 
--
+- 
   price: 5.99
+  pricingkey: de
   currency: EUR
--
+- 
   price: 6.29
+  pricingkey: en
   currency: USD
 
 ----
 
-Tax: reduced
+Taxrule: reduced
 
 ----
 
-Stock:
+Stock: 
 
 ----
 
@@ -26,6 +28,10 @@ Blocks: [{"content":{"text":"<p>Quis aute iure reprehenderit in voluptate velit 
 ----
 
 Thumb: - file://qUTWssWkM77FfWxC
+
+----
+
+Tax: reduced
 
 ----
 

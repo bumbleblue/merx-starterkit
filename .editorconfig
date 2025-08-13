@@ -1,21 +1,21 @@
-[*.{css,scss,less,js,json,ts,sass,html,hbs,mustache,phtml,html.twig,md,yml}]
+[*.{css,js,mjs,json,html,md,yml,php}]
 charset = utf-8
-indent_style = space
+indent_style = tab
 indent_size = 2
 end_of_line = lf
-trim_trailing_whitespace = true
 insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.yml]
+indent_style = space
 
 [*.md]
-indent_size = 4
 trim_trailing_whitespace = false
 
-[site/**.php]
-indent_size = 4
+[content/**/*.txt]
+trim_trailing_whitespace = false
+insert_final_newline = false
 
-[site/{templates,snippets}/**.php]
-indent_size = 2
-
-[package.json,.{babelrc,editorconfig,eslintrc,lintstagedrc,stylelintrc}]
+[site/languages/*.php]
 indent_style = space
-indent_size = 2
+indent_size = 4

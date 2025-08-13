@@ -1,6 +1,13 @@
 .product .price {
   font-size: 1.2em;
   font-weight: 700;
+
+  > small {
+    margin-block-start: 0.2rem;
+    display: block;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
 }
 
 .product label {

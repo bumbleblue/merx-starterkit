@@ -6,11 +6,18 @@ Variantname: Blue
 
 ----
 
-Price: 15
+Prices:
+
+- 
+  price: 15
+  pricingkey: de
+- 
+  price: 13
+  pricingkey: en
 
 ----
 
-Tax: default
+Taxrule: default
 
 ----
 
@@ -18,7 +25,15 @@ Stock: 14
 
 ----
 
-Thumb: - martin-widenka-0ri80lqco18-unsplash.jpg
+Thumb: - file://o9c6ea2ibjvxymdu
+
+----
+
+Price: 15
+
+----
+
+Tax: default
 
 ----
 

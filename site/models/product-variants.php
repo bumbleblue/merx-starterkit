@@ -1,5 +1,7 @@
 <?php
 
+use Kirby\Cms\Page;
+use Kirby\Content\Field;
 use Wagnerwagner\Merx\Price;
 
 /**
@@ -13,45 +15,45 @@ use Wagnerwagner\Merx\Price;
 
 class ProductVariantsPage extends Page
 {
-    /**
-     * Returns the thumb field of the default variant
-     *
-     * @return \Kirby\Content\Field|null
-     */
-    public function thumb(): ?\Field
-    {
-        if ($this->defaultVariant()) {
-            return $this->defaultVariant()->thumb();
-        }
-        return null;
-    }
+	/**
+	 * Returns the thumb field of the default variant
+	 *
+	 * @return \Kirby\Content\Field|null
+	 */
+	public function thumb(): ?Field
+	{
+		if ($this->defaultVariant()) {
+			return $this->defaultVariant()->thumb();
+		}
+		return null;
+	}
 
-    /**
-     * Returns all product variants
-     *
-     * @return \Kirby\Cms\Pages<\Wagnerwagner\Merx\ProductPage>
-     */
-    public function variants(): \Kirby\Cms\Pages
-    {
-        return $this->children()->listed()->filter('intendedTemplate', 'product-variant');
-    }
+	/**
+	 * Returns all product variants
+	 *
+	 * @return \Kirby\Cms\Pages<\Wagnerwagner\Merx\ProductPage>
+	 */
+	public function variants(): \Kirby\Cms\Pages
+	{
+		return $this->children()->listed()->filter('intendedTemplate', 'product-variant');
+	}
 
-    /**
-     * Returns default variant defined by
-     * defaultVariant content field.
-     *
-     * @return ProductVariantPage|null
-     */
-    public function defaultVariant(): ?ProductVariantPage
-    {
-        return $this->content()->defaultVariant()->toPage();
-    }
+	/**
+	 * Returns default variant defined by
+	 * defaultVariant content field.
+	 *
+	 * @return ProductVariantPage|null
+	 */
+	public function defaultVariant(): ?ProductVariantPage
+	{
+		return $this->content()->defaultVariant()->toPage();
+	}
 
-    public function price(): ?Price
-    {
-        if ($this->defaultVariant()) {
-            return $this->defaultVariant()->price();
-        }
-        return null;
-    }
+	public function price(): ?Price
+	{
+		if ($this->defaultVariant()) {
+			return $this->defaultVariant()->price();
+		}
+		return null;
+	}
 }

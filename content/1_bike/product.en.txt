@@ -4,20 +4,24 @@ Title: Bike
 
 Prices:
 
--
+- 
   price: 2000
+  pricingkey: de
+  languagecode: EUR
   currency: EUR
--
+- 
   price: 2100
+  pricingkey: en
+  languagecode: USD
   currency: USD
 
 ----
 
-Tax: default
+Taxrule: default
 
 ----
 
-Stock:
+Stock: 
 
 ----
 
@@ -26,6 +30,10 @@ Blocks: [{"content":{"text":"<p>Aenean lacinia bibendum nulla sed consectetur. D
 ----
 
 Thumb: - file://DKyNcKMktvTrqg7V
+
+----
+
+Tax: default
 
 ----
 

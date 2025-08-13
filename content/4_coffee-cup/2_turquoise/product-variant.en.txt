@@ -2,11 +2,18 @@ Variantname: Turquoise
 
 ----
 
-Price: 10
+Prices:
+
+- 
+  price: 15
+  pricingkey: de
+- 
+  price: 13
+  pricingkey: en
 
 ----
 
-Tax: default
+Taxrule: default
 
 ----
 
@@ -14,10 +21,15 @@ Stock: 5
 
 ----
 
-Thumb:
+Thumb: - file://qg38eontdpqm1zl7
 
-- >
-  taisiia-shestopal-xo9notfy4mu-unsplash.jpg
+----
+
+Price: 10
+
+----
+
+Tax: default
 
 ----
 

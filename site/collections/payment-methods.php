@@ -9,7 +9,7 @@ return function (): Kirby\Toolkit\Collection
             'paymentProvider' => 'paypal',
         ],
         'credit-card' => [
-            'value' => 'credit-card-sca',
+            'value' => 'credit-card',
             'label' => t('paymentMethod.creditCardSca.label'),
             'paymentProvider' => 'stripe',
         ],

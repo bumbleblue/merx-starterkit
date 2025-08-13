@@ -1,21 +1,22 @@
 {
-    "name": "wagnerwagner/merx-starterkit",
-    "description": "Starterkit for Merx.",
-    "license": "proprietary",
-    "require": {
-        "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
-    },
-    "scripts": {
-        "analyze": [
-            "composer install",
-            "@analyze:composer",
-            "@analyze:psalm",
-            "rm -rf vendor; rm composer.lock"
-        ],
-        "analyze:composer": "composer validate --strict",
-        "analyze:psalm": "psalm --clear-cache; psalm"
-    },
-    "require-dev": {
-        "vimeo/psalm": "^6.12"
-    }
+	"name": "wagnerwagner/merx-starterkit",
+	"description": "Starterkit for Merx.",
+	"version": "2.0.0-alpha.3",
+	"license": "proprietary",
+	"require": {
+		"php": "~8.2.0 || ~8.3.0 || ~8.4.0"
+	},
+	"scripts": {
+		"analyze": [
+			"composer install",
+			"@analyze:composer",
+			"@analyze:psalm",
+			"rm -rf vendor; rm composer.lock"
+		],
+		"analyze:composer": "composer validate --strict",
+		"analyze:psalm": "psalm --clear-cache; psalm"
+	},
+	"require-dev": {
+		"vimeo/psalm": "^6.12"
+	}
 }

@@ -25,7 +25,7 @@ class ProductVariants {
         slotStockInfoElement.innerText = selectedOption.dataset.stockInfo;
 
         // update url the get a unique uri for each product variant
-        window.location.hash = `#${selectedOption.dataset.uid}`;
+        window.location.hash = `#${selectedOption.getAttribute('name')}`;
       }
     }
 
@@ -35,7 +35,7 @@ class ProductVariants {
 
       // update select element if url hash a hash value
       if (hash) {
-        selectElement.value = `${element.dataset.parentId}/${hash}`;
+        selectElement.value = selectElement.namedItem(hash).value;
         updateProductVariant();
       }
     }

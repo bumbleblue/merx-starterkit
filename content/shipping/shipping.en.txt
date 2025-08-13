@@ -6,18 +6,24 @@ Prices:
 
 - 
   price: 6
+  pricingkey: de
   currency: EUR
 - 
   price: 6.3
+  pricingkey: en
   currency: USD
 
 ----
 
-Tax: default
+Taxrule: default
 
 ----
 
 Freeshipping: 40
+
+----
+
+Tax: default
 
 ----
 
