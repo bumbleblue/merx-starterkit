@@ -3,6 +3,7 @@
 use Kirby\Toolkit\Str;
 
 return [
+    'debug' => true,
     'languages' => true,
     'thumbs' => [
         'quality' => 80,
