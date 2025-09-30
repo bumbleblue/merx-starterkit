@@ -69,6 +69,9 @@ return [
 
     'field.payment-method' => 'Payment method',
     'field.tax-rate' => 'Tax rate',
+
+    'page.title.default' => 'Page',
+    'page.title.product' => 'Product',
   ],
   'url' => ''
 ];

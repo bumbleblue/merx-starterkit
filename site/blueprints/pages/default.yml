@@ -1,0 +1,103 @@
+title: page.title.default
+
+status:
+  draft: true
+  listed: true
+
+image:
+  query: page.images.first
+
+fields:
+  blocks:
+    type: blocks
+    tabs:
+      main:
+        label:
+          en: Content
+          de: Inhalt
+        fields:
+          title:
+            label:
+              en: Title
+              de: Titel
+            type: text
+            required: true
+          text:
+            label:
+              en: Text
+              de: Text
+            type: textarea
+            buttons: false
+          blocks:
+            label:
+              en: Content Blocks
+              de: Inhalts-Blöcke
+            type: blocks
+            fieldsets:
+              text:
+                label:
+                  en: Text
+                  de: Text
+                fields:
+                  text:
+                    label:
+                      en: Text
+                      de: Text
+                    type: textarea
+                    buttons: false
+              heading:
+                label:
+                  en: Heading
+                  de: Überschrift
+                fields:
+                  heading:
+                    label:
+                      en: Heading
+                      de: Überschrift
+                    type: text
+                    required: true
+                  level:
+                    label:
+                      en: Level
+                      de: Ebene
+                    type: select
+                    options:
+                      h1: H1
+                      h2: H2
+                      h3: H3
+                      h4: H4
+                      h5: H5
+                      h6: H6
+                    default: h2
+              image:
+                label:
+                  en: Image
+                  de: Bild
+                fields:
+                  image:
+                    label:
+                      en: Image
+                      de: Bild
+                    type: files
+                    multiple: false
+                    layout: cards
+                    query: page.images
+                    required: true
+                  caption:
+                    label:
+                      en: Caption
+                      de: Bildunterschrift
+                    type: text
+      media:
+        label:
+          en: Media
+          de: Medien
+        fields:
+          images:
+            label:
+              en: Images
+              de: Bilder
+            type: files
+            multiple: true
+            layout: cards
+            query: page.images

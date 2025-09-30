@@ -69,6 +69,9 @@ return [
 
     'field.payment-method' => 'Bezahlmethode',
     'field.tax-rate' => 'Steuersatz',
+
+    'page.title.default' => 'Seite',
+    'page.title.product' => 'Produkt',
   ],
   'url' => 'de',
 ];
